@@ -38,8 +38,8 @@ public class ProductService {
 
     public ProductResponse saveProduct(ProductRequest request) {
         Product entity = new Product(request);
-        repository.save(entity);
+        log.info("Save product: [{}]", entity);
 
-        return new ProductResponse(entity);
+        return new ProductResponse(repository.save(entity));
     }
 }
