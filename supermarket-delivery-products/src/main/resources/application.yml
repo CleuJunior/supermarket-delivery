@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: supermarket-delivery-products
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/supermarket-products"
