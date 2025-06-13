@@ -4,4 +4,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ./supermarket-delivery-products/src/resources/mongo/init:/docker-entrypoint-initdb.d
+      - mongodb-data:/var/lib/postgresql/data
+
+volumes:
+  mongodb-data:
