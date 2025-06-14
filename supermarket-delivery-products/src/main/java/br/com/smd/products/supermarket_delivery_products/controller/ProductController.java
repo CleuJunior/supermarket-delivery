@@ -2,6 +2,7 @@ package br.com.smd.products.supermarket_delivery_products.controller;
 
 
 import br.com.smd.products.supermarket_delivery_products.dto.request.ProductRequest;
+import br.com.smd.products.supermarket_delivery_products.dto.request.SearchProductQueryRequest;
 import br.com.smd.products.supermarket_delivery_products.dto.response.ProductResponse;
 import br.com.smd.products.supermarket_delivery_products.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +21,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/products")
 @RequiredArgsConstructor
-public class ItemController {
+public class ProductController {
 
     private final ProductService service;
 
@@ -36,6 +37,13 @@ public class ItemController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(service.getList());
+    }
+
+    @PostMapping("/search")
+    public ResponseEntity<List<ProductResponse>> search(@RequestBody SearchProductQueryRequest request) {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(service.searchProduct(request));
     }
 
     @PostMapping
