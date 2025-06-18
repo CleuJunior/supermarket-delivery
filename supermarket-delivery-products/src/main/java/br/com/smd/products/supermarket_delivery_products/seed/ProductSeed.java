@@ -20,7 +20,7 @@ public class ProductSeed {
     private final ProductRepository repository;
 
     @Bean
-    public CommandLineRunner seed() {
+    public CommandLineRunner seedProduct() {
         return args -> {
             List<Product> check = repository.findAll();
 
