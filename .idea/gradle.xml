@@ -9,7 +9,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/service-discovery" />
+            <option value="$PROJECT_DIR$/service-gateway" />
             <option value="$PROJECT_DIR$/supermarket-delivery-product" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/serice-gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/serice-gateway" />
           </set>
         </option>
       </GradleProjectSettings>

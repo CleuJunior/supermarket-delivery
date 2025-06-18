@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="service-gateway" target="17" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="serice-gateway.main" options="-parameters" />
+      <module name="serice-gateway.test" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
       <module name="supermarket-delivery-products" options="-parameters" />
       <module name="supermarket-delivery-products.main" options="-parameters" />
       <module name="supermarket-delivery-products.test" options="-parameters" />
       <module name="supermarket-delivery.service-discovery" options="-parameters" />
       <module name="supermarket-delivery.service-discovery.main" options="-parameters" />
       <module name="supermarket-delivery.service-discovery.test" options="-parameters" />
+      <module name="supermarket-delivery.service-gateway" options="-parameters" />
+      <module name="supermarket-delivery.service-gateway.main" options="-parameters" />
+      <module name="supermarket-delivery.service-gateway.test" options="-parameters" />
     </option>
   </component>
 </project>

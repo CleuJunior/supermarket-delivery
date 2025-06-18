@@ -1,13 +1,15 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
-    name: supermarket-delivery-products
-  data:
-    mongodb:
-      uri: "mongodb://localhost:27017/supermarket-products"
-
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 
 eureka:
   client:
