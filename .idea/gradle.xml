@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/service-discovery" />
             <option value="$PROJECT_DIR$/service-gateway" />
+            <option value="$PROJECT_DIR$/supermarket-delivery-cart" />
             <option value="$PROJECT_DIR$/supermarket-delivery-product" />
           </set>
         </option>

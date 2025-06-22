@@ -6,6 +6,7 @@ pluginManagement {
 
 include(
     "supermarket-delivery-product",
+    "supermarket-delivery-cart",
     "service-gateway",
     "service-discovery"
 )

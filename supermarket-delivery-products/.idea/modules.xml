@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/supermarket-delivery-products.main.iml" filepath="$PROJECT_DIR$/.idea/modules/supermarket-delivery-products.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supermarket-delivery-cart/supermarket-delivery.supermarket-delivery-cart.main.iml" filepath="$PROJECT_DIR$/.idea/modules/supermarket-delivery-cart/supermarket-delivery.supermarket-delivery-cart.main.iml" />
     </modules>
   </component>
 </project>

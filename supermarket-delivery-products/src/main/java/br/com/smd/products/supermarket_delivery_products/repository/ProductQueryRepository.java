@@ -19,6 +19,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class ProductQueryRepository {
 
+    private static final String ID = "_id";
     private static final String NAME = "name";
     private static final String BRAND = "brand";
     private static final String IN_STOCK = "inStock";
@@ -28,6 +29,12 @@ public class ProductQueryRepository {
 
     public List<Product> searchProduct(SearchProductQueryRequest request) {
         Criteria criteria = Criteria.where(DELETED).is(false);
+
+        Optional.ofNullable(request.productsId()).ifPresent(list -> {
+            if (!list.isEmpty()) {
+                criteria.and(ID).in(list);
+            }
+        });
 
         Optional.ofNullable(request.name())
                 .ifPresent(n -> criteria.and(NAME).is(n));
